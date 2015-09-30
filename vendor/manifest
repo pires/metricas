@@ -1,0 +1,81 @@
+{
+	"version": 0,
+	"dependencies": [
+		{
+			"importpath": "github.com/golang/protobuf/proto",
+			"repository": "https://github.com/golang/protobuf",
+			"revision": "3d2510a4dd961caffa2ae781669c628d82db700a",
+			"branch": "master",
+			"path": "/proto"
+		},
+		{
+			"importpath": "github.com/influxdb/influxdb/client",
+			"repository": "https://github.com/influxdb/influxdb",
+			"revision": "129d042ba2dd21078729b132ca1cce7e504fdbf3",
+			"branch": "master",
+			"path": "/client"
+		},
+		{
+			"importpath": "github.com/influxdb/influxdb/models",
+			"repository": "https://github.com/influxdb/influxdb",
+			"revision": "129d042ba2dd21078729b132ca1cce7e504fdbf3",
+			"branch": "master",
+			"path": "/models"
+		},
+		{
+			"importpath": "github.com/influxdb/influxdb/pkg/escape",
+			"repository": "https://github.com/influxdb/influxdb",
+			"revision": "129d042ba2dd21078729b132ca1cce7e504fdbf3",
+			"branch": "master",
+			"path": "/pkg/escape"
+		},
+		{
+			"importpath": "github.com/nats-io/gnatsd/conf",
+			"repository": "https://github.com/nats-io/gnatsd",
+			"revision": "fe3b8f2aa1826d85d78ee4d17502ae03e27afb26",
+			"branch": "master",
+			"path": "/conf"
+		},
+		{
+			"importpath": "github.com/nats-io/gnatsd/hash",
+			"repository": "https://github.com/nats-io/gnatsd",
+			"revision": "fe3b8f2aa1826d85d78ee4d17502ae03e27afb26",
+			"branch": "master",
+			"path": "/hash"
+		},
+		{
+			"importpath": "github.com/nats-io/gnatsd/hashmap",
+			"repository": "https://github.com/nats-io/gnatsd",
+			"revision": "fe3b8f2aa1826d85d78ee4d17502ae03e27afb26",
+			"branch": "master",
+			"path": "/hashmap"
+		},
+		{
+			"importpath": "github.com/nats-io/gnatsd/server",
+			"repository": "https://github.com/nats-io/gnatsd",
+			"revision": "fe3b8f2aa1826d85d78ee4d17502ae03e27afb26",
+			"branch": "master",
+			"path": "/server"
+		},
+		{
+			"importpath": "github.com/nats-io/gnatsd/sublist",
+			"repository": "https://github.com/nats-io/gnatsd",
+			"revision": "fe3b8f2aa1826d85d78ee4d17502ae03e27afb26",
+			"branch": "master",
+			"path": "/sublist"
+		},
+		{
+			"importpath": "github.com/nats-io/gnatsd/test",
+			"repository": "https://github.com/nats-io/gnatsd",
+			"revision": "fe3b8f2aa1826d85d78ee4d17502ae03e27afb26",
+			"branch": "master",
+			"path": "/test"
+		},
+		{
+			"importpath": "github.com/nats-io/nats",
+			"repository": "https://github.com/nats-io/nats",
+			"revision": "ef5165913ac88c53c2e2be39f73f8314490ea5dd",
+			"branch": "master"
+		}
+	]
+}

@@ -1,0 +1,56 @@
+:sectnums:
+:numbered:
+:toc: macro
+:toc-title:
+:toclevels: 99
+
+
+# metricas
+A pipeline for metrics acquisition and storage.
+
+toc::[]
+
+## Pre-requisites
+
+* Go 1.5.1
+* `make`
+* Go tools
+** http://getgb.io[`gb`] - `go get -u github.com/constabulary/gb/...`
+
+## Development
+
+### Build
+
+The following will take care of generating code, build and run tests.
+```
+make all
+```
+
+## Deployment
+
+```
+docker run --name influxdb -d --net host -e PRE_CREATE_DB="metrics" tutum/influxdb
+docker run --name nats -d --net host nats
+```
+
+Configure InfluxDB authentication needed for Grafana:
+
+* Point your browser to http://`boot2docker ip`:8086/
+* Run the following query `CREATE USER test WITH PASSWORD'test'`
+
+http://docs.grafana.org/datasources/influxdb[Configure Grafana integration with InfluxDB].
+
+## Available flags
+
+```
+  -db string
+    	InfluxDB address (host:port) (default "localhost:8086")
+  -db_name string
+    	InfluxDB database to write to (default "metrics")
+  -db_pwd string
+    	Optional user password to access InfluxDB
+  -db_user string
+    	Optional user to access InfluxDB
+  -nats string
+    	NATS adress (host:port) (default "localhost:4222")
+```
